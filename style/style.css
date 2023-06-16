@@ -19,7 +19,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .header{
@@ -33,10 +33,13 @@ button{
   font-family: 'Press Start 2P', sans-serif;
 }
 .againBtn{
-  padding: 1rem 4rem;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  color: #222;
 }
 /* title */
 .title{
+  font-size: 1.2rem;
   text-align: center;
 }
 /* line */
@@ -64,7 +67,7 @@ button{
 .content{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 2rem;
 }
 
@@ -74,7 +77,38 @@ button{
   gap: 1rem;
 }
 
-.number-input{
+#number-input{
+  color: white;
   background-color: #222;
+  width: 15rem;
+  height: 6rem;
+  font-size: 4rem;
+  text-align: center;
   border: 2px solid white;
+}
+
+.checkBtn{
+  color: #222;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  align-self: center;
+}
+
+.right-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-content{
+  font-size: 1.3rem;
+}
+
+.highscore{
+  margin-top: 1rem;
+}
+
+.score, .highscore{
+  font-size: 1.2rem;
 }
