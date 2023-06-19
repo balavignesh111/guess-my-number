@@ -8,24 +8,25 @@
 </head>
 <body>
   <div class="header">
-    <button class="againBtn">Again!</button>
+    <button class="againBtn" id="againBtn">Again!</button>
     <p>(Between 1 and 100)</p>
   </div>
   <div class="title"><h1>Guess My Number!</h1></div>
   <div class="line"></div>
-  <div class="random-number">?</div>
+  <div class="random-number" id="guessNumber">?</div>
   <div class="content">
     <div class="left-content">
       <input type="number" id="number-input">
-      <button class="checkBtn">Check!</button>
+      <button class="checkBtn" id="checkBtn">Check!</button>
     </div>
     <div class="right-content">
-      <p class="result-content">Start guessing...</p>
+      <p class="result-content" id="result-content">Start guessing...</p>
       <div class="scores-result">
-        <p class="score">💯 Score : <span class="score-value">20</span></p>
-        <p class="highscore">🏅 Highscore : <span class="highscore-value">0</span></p>
+        <p class="score">💯 Score : <span class="score-value" id="score-value">20</span></p>
+        <p class="highscore">🏅 Highscore : <span class="highscore-value" id="highscore-value">0</span></p>
       </div>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
