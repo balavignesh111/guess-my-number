@@ -26,10 +26,10 @@ const randomNumber = function(){
 
 function init(){
   score = 10;
-  highScore = 0;
   scoreEle.innerText = score;
   computerValue = randomNumber();
   userInputEle.value = "";
+  guessNoEle.innerText = "?";
   document.body.style.backgroundColor = '#222';
 }
 
@@ -50,9 +50,13 @@ checkButtonEle.addEventListener('click',function(){
         console.log("validated");
         if(userInput === computerValue){
           resultContentEle.innerText = `🎊 Correct number!!`;
-          highScore = score;
           guessNoEle.innerText = computerValue;
-          highScoreEle.innerText = highScore;
+          if(Number(highScoreEle.innerText) === 0){
+            highScore = score;
+            highScoreEle.innerText = highScore;
+          }else if(score > highScore){
+            highScoreEle.innerText = score;
+          }
           document.body.style.backgroundColor = `green`;
           guessNoEle.style.width = '14rem';
         }else if(userInput < computerValue){
